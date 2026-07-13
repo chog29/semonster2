@@ -34,9 +34,11 @@ application {
     // Define the main class for the application.
     mainClass = 'org.example.App'
 }
+
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
+
 // 2. 実行時の文字コードをUTF-8に強制
 tasks.withType(JavaExec) {
     jvmArgs += "-Dfile.encoding=UTF-8"
