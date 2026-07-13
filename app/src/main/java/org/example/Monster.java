@@ -1,0 +1,21 @@
+package org.example;
+
+public class Monster {
+  private String name;
+  private int rare;
+
+  Monster(int nameNum, int rareNum) {
+    this.name = this.summonMonster(nameNum);
+    this.rare = rareNum;
+  }
+
+  String summonMonster(int num) {
+    String monsters[] = { "スライム", "グロンプ", "マークウルフ", "クルーグ", "ラフター" };
+    return monsters[num];
+  }
+
+  @Override
+  public String toString() {
+    return this.name + ":レア度[" + this.rare + "]\n";
+  }
+}
