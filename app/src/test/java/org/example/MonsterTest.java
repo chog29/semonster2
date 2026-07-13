@@ -31,6 +31,6 @@ public class MonsterTest {
   @Test
   public void testSummonMonster5() {
     Monster monster = new Monster(4, 1);
-    Assert.assertEquals("ラフター:レア度[1]\n", monster.toString());
+    Assert.assertEquals("ラプター:レア度[1]\n", monster.toString());
   }
 }
