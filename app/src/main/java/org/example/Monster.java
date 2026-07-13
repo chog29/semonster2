@@ -7,6 +7,10 @@ public class Monster {
   Monster(int nameNum, int rareNum) {
     this.name = this.summonMonster(nameNum);
     this.rare = rareNum;
+
+    if (this.rare >= 3) {
+      this.name = this.name + "Neo";
+    }
   }
 
   String summonMonster(int num) {

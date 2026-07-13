@@ -19,7 +19,7 @@ public class MonsterTest {
   @Test
   public void testSummonMonster3() {
     Monster monster = new Monster(2, 3);
-    Assert.assertEquals("マークウルフ:レア度[3]\n", monster.toString());
+    Assert.assertEquals("マークウルフNeo:レア度[3]\n", monster.toString());
   }
 
   @Test
